@@ -1,0 +1,28 @@
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-x24lq[0m
+{"level":"warn","ts":1596015541.2406273,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596015541.2418516,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-nvfqd[0m
+{"level":"warn","ts":1596015542.3510065,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1596015542.3535175,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-rajattyagipvr-jx-build-template-z9xp9-fgt95[0m
+{"level":"warn","ts":1596015547.4083426,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1596015550.5837858,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/**-build-templates.git @ v0.0.1506 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Cloning the Jenkins X versions repo https://github.com/*************/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mrajattyagipvr-jx-build-template-z9xp9-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-basic-auth-username[0m
+Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
+error: failed to find Secret jenkins-x-chartmuseum in namespace **: secrets "jenkins-x-chartmuseum" not found
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-basic-auth-username'. The execution of the pipeline has stopped.[0m
